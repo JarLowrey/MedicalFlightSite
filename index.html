@@ -1,99 +1,1212 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dr. Charles Lowrey, M.D. | FAA Aviation Medical Exams</title>
-<meta name="description" content="FAA Designated Aviation Medical Examiner offering Class II and Class III medical exams in Mansfield, Ohio. Flexible appointment times including evenings and weekends.">
-<style>
-:root{--navy:#071a2f;--blue:#0b5ea8;--sky:#eaf4fb;--ink:#142234;--muted:#64748b;--line:#dbe5ee;--white:#fff;--gold:#e8b84b;--shadow:0 18px 50px rgba(7,26,47,.12);--radius:22px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f7fafc;line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
-.top{background:var(--navy);color:#dce8f3;font-size:13px}.top .container{display:flex;justify-content:space-between;gap:20px;padding:9px 0}.top a{color:#fff;font-weight:700}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(219,229,238,.8)}nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:12px}.mark{width:42px;height:42px;border-radius:12px;background:var(--navy);display:grid;place-items:center;color:#fff;font-weight:900;letter-spacing:-1px}.brand strong{display:block;font-size:15px}.brand span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.12em}nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:700}nav li a:hover{color:var(--blue)}.navcta{padding:11px 17px;border-radius:12px;background:var(--blue);color:white!important}
-.hero{position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(3,14,26,.9),rgba(3,14,26,.45)),url("images/image2.png");background-size:cover;background-position:center;color:white}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,26,.35),transparent 70%);pointer-events:none}.hero .container{position:relative;z-index:2;min-height:620px;display:flex;align-items:center}.hero-content{max-width:690px;padding:80px 0}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.08);padding:7px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800}.dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}h1{font-size:clamp(42px,6vw,74px);line-height:1.02;letter-spacing:-.055em;margin:20px 0}.hero p{font-size:19px;max-width:620px;color:#dce9f5}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:13px;font-weight:800;border:1px solid transparent}.btn.primary{background:white;color:var(--navy)}.btn.outline{border-color:rgba(255,255,255,.35);color:white;background:rgba(255,255,255,.06)}.hero-note{margin-top:22px;font-size:13px;color:#c3d5e5}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FAA Aviation Medical Examiner in Mansfield, Ohio | Class II & Class III Pilot Medical Exams</title>
+    <meta name="description"
+        content="FAA aviation medical examiner in Mansfield, Ohio offering Class II and Class III pilot medical exams, FAA medical certification support, and aviation physicals for pilots across Ohio.">
+    <style>
+        :root {
+            --navy: #071a2f;
+            --blue: #0b5ea8;
+            --sky: #eaf4fb;
+            --ink: #142234;
+            --muted: #64748b;
+            --line: #dbe5ee;
+            --white: #fff;
+            --gold: #e8b84b;
+            --shadow: 0 18px 50px rgba(7, 26, 47, .12);
+            --radius: 22px
+        }
 
-.stats{margin-top:-46px;position:relative;z-index:4}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);background:white;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}.stat{padding:25px 28px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{font-size:23px;display:block;color:var(--navy)}.stat span{font-size:13px;color:var(--muted)}
+        * {
+            box-sizing: border-box
+        }
 
-section{padding:90px 0}.sectionhead{max-width:650px;margin-bottom:40px}.kicker{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.13em;font-size:11px}.sectionhead h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.04em;margin:10px 0}.sectionhead p{color:var(--muted);font-size:17px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:0 8px 28px rgba(7,26,47,.05)}.card .num{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:.12em}.card h3{font-size:26px;margin:12px 0 8px}.card p,.card li{color:var(--muted)}.card ul{padding-left:19px}.price{font-size:34px;font-weight:900;color:var(--navy);margin:18px 0 2px}.sub{font-size:12px;color:var(--muted)}
-.band{background:var(--sky)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:white;border:1px solid var(--line);border-radius:18px;padding:24px}.step i{font-style:normal;width:34px;height:34px;border-radius:10px;background:var(--navy);color:white;display:grid;place-items:center;font-weight:900}.step h3{font-size:17px}.step p{font-size:14px;color:var(--muted)}
-.notice{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;background:var(--navy);color:white;border-radius:var(--radius);padding:34px 38px}.notice h3{margin:0 0 5px;font-size:25px}.notice p{margin:0;color:#cbd9e6}.notice .btn{background:white;color:var(--navy)}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}.list{display:grid;gap:12px}.listrow{display:flex;gap:13px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line)}.check{width:25px;height:25px;border-radius:8px;background:#e5f1fb;color:var(--blue);display:grid;place-items:center;font-weight:900;flex:none}.listrow b{display:block}.listrow span{font-size:13px;color:var(--muted)}
-.location{background:var(--navy);color:white}.location .sectionhead p{color:#bfd0df}.mapbox{min-height:320px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.14);background:linear-gradient(145deg,#102d49,#0a1d31);padding:32px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.mapline{height:1px;background:rgba(255,255,255,.14);transform:rotate(-18deg);margin:20px -30px}.pin{font-size:40px}.address{font-size:18px}.address small{display:block;color:#a9bfce;margin-top:6px}
-.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.resource{background:white;border:1px solid var(--line);border-radius:18px;padding:23px}.resource b{display:block;margin-bottom:6px}.resource span{color:var(--muted);font-size:13px}
-.gallery{display:grid;grid-template-columns:1.35fr .9fr .9fr;gap:16px}.photo{margin:0;min-height:230px;border-radius:20px;overflow:hidden;position:relative;background:#102d49}.photo img{width:100%;height:100%;min-height:230px;object-fit:cover;display:block}.photo figcaption{position:absolute;left:16px;right:16px;bottom:16px;color:#fff;font-weight:800;text-shadow:0 2px 12px rgba(0,0,0,.6)}\nfooter{background:#04111f;color:#aebfce;padding:45px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.foot strong{color:white}.footlinks{display:flex;gap:18px;font-size:13px}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px;font-size:12px}
-@media(max-width:850px){.gallery{grid-template-columns:1fr}.photo{min-height:250px}.photo img{min-height:250px}nav ul{display:none}.hero .container{min-height:570px}.plane{display:none}.statgrid,.cards,.split,.resources{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.steps{grid-template-columns:1fr 1fr}.notice{grid-template-columns:1fr}.top .container{flex-direction:column;gap:2px}.foot{flex-direction:column}}
-@media(max-width:520px){section{padding:65px 0}.steps{grid-template-columns:1fr}.hero-content{padding:55px 0}.hero p{font-size:17px}h1{font-size:44px}.buttons .btn{width:100%}}
-</style>
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: #f7fafc;
+            line-height: 1.6
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto
+        }
+
+        .top {
+            background: var(--navy);
+            color: #dce8f3;
+            font-size: 13px
+        }
+
+        .top .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 9px 0
+        }
+
+        .top a {
+            color: #fff;
+            font-weight: 700
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: rgba(255, 255, 255, .94);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(219, 229, 238, .8)
+        }
+
+        nav {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .mark {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: var(--navy);
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-weight: 900;
+            letter-spacing: -1px
+        }
+
+        .brand strong {
+            display: block;
+            font-size: 15px
+        }
+
+        .brand span {
+            display: block;
+            color: var(--muted);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .12em
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        nav li a:hover {
+            color: var(--blue)
+        }
+
+        .navcta {
+            padding: 11px 17px;
+            border-radius: 12px;
+            background: var(--blue);
+            color: white !important
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background-image: linear-gradient(90deg, rgba(3, 14, 26, .9), rgba(3, 14, 26, .45)), url("images/IMG_3911.jpeg");
+            background-size: cover;
+            background-position: center;
+            color: white
+        }
+
+        .hero:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(3, 14, 26, .35), transparent 70%);
+            pointer-events: none
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            min-height: 620px;
+            display: flex;
+            align-items: center
+        }
+
+        .hero-content {
+            max-width: 690px;
+            padding: 80px 0
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, .24);
+            background: rgba(255, 255, 255, .08);
+            padding: 7px 12px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            font-size: 11px;
+            font-weight: 800
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--gold)
+        }
+
+        h1 {
+            font-size: clamp(42px, 6vw, 74px);
+            line-height: 1.02;
+            letter-spacing: -.055em;
+            margin: 20px 0
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 620px;
+            color: #dce9f5
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 14px 20px;
+            border-radius: 13px;
+            font-weight: 800;
+            border: 1px solid transparent
+        }
+
+        .btn.primary {
+            background: white;
+            color: var(--navy)
+        }
+
+        .btn.outline {
+            border-color: rgba(255, 255, 255, .35);
+            color: white;
+            background: rgba(255, 255, 255, .06)
+        }
+
+        .hero-note {
+            margin-top: 22px;
+            font-size: 13px;
+            color: #c3d5e5
+        }
+
+        .stats {
+            margin-top: -46px;
+            position: relative;
+            z-index: 4
+        }
+
+        .statgrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            overflow: hidden
+        }
+
+        .stat {
+            padding: 25px 28px;
+            border-right: 1px solid var(--line)
+        }
+
+        .stat:last-child {
+            border: 0
+        }
+
+        .stat b {
+            font-size: 23px;
+            display: block;
+            color: var(--navy)
+        }
+
+        .stat span {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        section {
+            padding: 90px 0
+        }
+
+        .sectionhead {
+            max-width: 650px;
+            margin-bottom: 40px
+        }
+
+        .kicker {
+            color: var(--blue);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: .13em;
+            font-size: 11px
+        }
+
+        .sectionhead h2 {
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.08;
+            letter-spacing: -.04em;
+            margin: 10px 0
+        }
+
+        .sectionhead p {
+            color: var(--muted);
+            font-size: 17px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: 0 8px 28px rgba(7, 26, 47, .05)
+        }
+
+        .card .num {
+            font-size: 12px;
+            font-weight: 900;
+            color: var(--blue);
+            letter-spacing: .12em
+        }
+
+        .card h3 {
+            font-size: 26px;
+            margin: 12px 0 8px
+        }
+
+        .card p,
+        .card li {
+            color: var(--muted)
+        }
+
+        .card ul {
+            padding-left: 19px
+        }
+
+        .price {
+            font-size: 34px;
+            font-weight: 900;
+            color: var(--navy);
+            margin: 18px 0 2px;
+            line-height: 1
+        }
+
+        .sub {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .vision-fee {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 22px;
+            padding: 18px 20px;
+            border-radius: 16px;
+            background: linear-gradient(180deg, #fffaf0 0%, #fff4d8 100%);
+            border: 1px solid rgba(232, 184, 75, .45);
+        }
+
+        .vision-fee .amount {
+            font-size: 28.8px;
+            line-height: 1;
+            font-weight: 900;
+            color: var(--navy)
+        }
+
+        .vision-fee .label {
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #9a6a10;
+            font-weight: 800;
+            margin-top: 6px
+        }
+
+        .band {
+            background: var(--sky)
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px
+        }
+
+        .step {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 24px
+        }
+
+        .step i {
+            font-style: normal;
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: var(--navy);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-weight: 900
+        }
+
+        .step h3 {
+            font-size: 17px
+        }
+
+        .step p {
+            font-size: 14px;
+            color: var(--muted)
+        }
+
+        .notice {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 30px;
+            background: var(--navy);
+            color: white;
+            border-radius: var(--radius);
+            padding: 34px 38px
+        }
+
+        .notice h3 {
+            margin: 0 0 5px;
+            font-size: 25px
+        }
+
+        .notice p {
+            margin: 0;
+            color: #cbd9e6
+        }
+
+        .notice .btn {
+            background: white;
+            color: var(--navy)
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: start
+        }
+
+        .about {
+            background: linear-gradient(180deg, #f7fafc 0%, #edf5fb 100%);
+            padding-bottom: 42px
+        }
+
+        .what-next,
+        section#exams,
+        section.gallery-section,
+        section#resources {
+            background: #ffffff
+        }
+
+        .band,
+        section#prepare {
+            background: var(--sky)
+        }
+
+        .about .container:last-of-type {
+            margin-top: 10px;
+            margin-bottom: 0
+        }
+
+        .about-list {
+            display: grid;
+            gap: 12px;
+            padding-left: 0;
+            list-style: none;
+            margin: 0
+        }
+
+        .about-list li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--line);
+            color: var(--muted)
+        }
+
+        .about-list .bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--blue);
+            margin-top: 10px;
+            flex: none
+        }
+
+        .serving {
+            background: transparent;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 10px
+        }
+
+        .serving-box {
+            background: rgba(248, 251, 255, .8);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 18px 20px;
+            max-width: 820px;
+            margin: 0 auto
+        }
+
+        .serving-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px
+        }
+
+        .city-tag {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: white;
+            border: 1px solid var(--line);
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 12px
+        }
+
+        .exam-pricing {
+            background: linear-gradient(180deg, #f8fbff 0%, #eef6fd 100%);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: 0 10px 24px rgba(7, 26, 47, .04)
+        }
+
+        .exam-pricing-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 30px;
+            align-items: start
+        }
+
+        .pricing-summary {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            flex-wrap: wrap
+        }
+
+        .price-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: white;
+            border: 1px solid var(--line);
+            color: var(--navy);
+            font-weight: 800
+        }
+
+        .list {
+            display: grid;
+            gap: 12px
+        }
+
+        .listrow {
+            display: flex;
+            gap: 13px;
+            align-items: flex-start;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .check {
+            width: 25px;
+            height: 25px;
+            border-radius: 8px;
+            background: #e5f1fb;
+            color: var(--blue);
+            display: grid;
+            place-items: center;
+            font-weight: 900;
+            flex: none
+        }
+
+        .listrow b {
+            display: block
+        }
+
+        .listrow span {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .location {
+            background: var(--navy);
+            color: white
+        }
+
+        .location .sectionhead p {
+            color: #bfd0df
+        }
+
+        .location-card {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: var(--radius);
+            padding: 24px;
+            display: grid;
+            gap: 16px;
+            align-content: start
+        }
+
+        .location-card b {
+            display: block;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 6px
+        }
+
+        .location-card small {
+            display: block;
+            color: #bfd0df;
+            line-height: 1.6
+        }
+
+        .mapbox {
+            min-height: 320px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, .14);
+            background: linear-gradient(145deg, #102d49, #0a1d31);
+            overflow: hidden;
+            position: relative
+        }
+
+        .mapbox img {
+            width: 100%;
+            height: 100%;
+            min-height: 320px;
+            object-fit: cover;
+            display: block
+        }
+
+        .mapline {
+            height: 1px;
+            background: rgba(255, 255, 255, .14);
+            transform: rotate(-18deg);
+            margin: 20px -30px
+        }
+
+        .pin {
+            font-size: 40px
+        }
+
+        .address {
+            font-size: 18px
+        }
+
+        .address small {
+            display: block;
+            color: #a9bfce;
+            margin-top: 6px
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px
+        }
+
+        .resource {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 23px
+        }
+
+        .resource b {
+            display: block;
+            margin-bottom: 6px
+        }
+
+        .resource span {
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1.35fr .9fr .9fr;
+            gap: 16px
+        }
+
+        .photo {
+            margin: 0;
+            min-height: 230px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            background: #102d49
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            min-height: 230px;
+            object-fit: cover;
+            display: block
+        }
+
+        .photo figcaption {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            color: #fff;
+            font-weight: 800;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, .6)
+        }
+
+        footer {
+            background: #04111f;
+            color: #aebfce;
+            padding: 52px 0 38px
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.7fr 1fr 1fr;
+            gap: 34px;
+            align-items: start
+        }
+
+        .footer-brand strong {
+            display: block;
+            color: white;
+            font-size: 21px;
+            margin-bottom: 10px
+        }
+
+        .footer-brand p,
+        .footer-meta,
+        .footer-links a {
+            color: #bfd2e3;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0
+        }
+
+        .footer-tag {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid rgba(255, 255, 255, .08);
+            color: #dfeaf5;
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            font-weight: 800
+        }
+
+        .footer-column h4 {
+            margin: 0 0 12px;
+            color: white;
+            font-size: 12px;
+            letter-spacing: .14em;
+            text-transform: uppercase
+        }
+
+        .footer-links {
+            display: grid;
+            gap: 8px
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            margin-top: 28px;
+            padding-top: 18px;
+            font-size: 12px;
+            color: #aebfce
+        }
+
+        @media(max-width:850px) {
+            .gallery {
+                grid-template-columns: 1fr
+            }
+
+            .photo {
+                min-height: 250px
+            }
+
+            .photo img {
+                min-height: 250px
+            }
+
+            nav ul {
+                display: none
+            }
+
+            .hero .container {
+                min-height: 570px
+            }
+
+            .plane {
+                display: none
+            }
+
+            .statgrid,
+            .cards,
+            .split,
+            .resources {
+                grid-template-columns: 1fr
+            }
+
+            .stat {
+                border-right: 0;
+                border-bottom: 1px solid var(--line)
+            }
+
+            .stat:last-child {
+                border-bottom: 0
+            }
+
+            .steps {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .notice {
+                grid-template-columns: 1fr
+            }
+
+            .exam-pricing-grid {
+                grid-template-columns: 1fr
+            }
+
+            .exam-pricing .cards {
+                grid-template-columns: 1fr !important
+            }
+
+            .top .container {
+                flex-direction: column;
+                gap: 2px
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:520px) {
+            section {
+                padding: 65px 0
+            }
+
+            .steps {
+                grid-template-columns: 1fr
+            }
+
+            .hero-content {
+                padding: 55px 0
+            }
+
+            .hero p {
+                font-size: 17px
+            }
+
+            h1 {
+                font-size: 44px
+            }
+
+            .buttons .btn {
+                width: 100%
+            }
+
+            .exam-pricing {
+                padding: 18px 14px
+            }
+
+            .exam-pricing .card {
+                padding: 22px 18px
+            }
+
+            .pricing-summary {
+                align-items: flex-start;
+                flex-direction: column
+            }
+
+            .listrow {
+                gap: 10px
+            }
+
+            .exam-pricing .btn {
+                width: 100%
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="top"><div class="container"><span>FAA Designated Aviation Medical Examiner • Mansfield, Ohio</span><a href="tel:7402150312">Call 740-215-0312</a></div></div>
-<header><nav class="container">
-<a class="brand" href="#"><div class="mark">✈</div><div><strong>Dr. Charles Lowrey, M.D.</strong><span>FAA Aviation Medical Exams</span></div></a>
-<ul><li><a href="#exams">Exams</a></li><li><a href="#prepare">Prepare</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#location">Location</a></li></ul>
-<a class="navcta" href="mailto:lowreyame@gmail.com">Schedule an Exam</a>
-</nav></header>
+    <div class="top">
+        <div class="container"><span>FAA Designated Aviation Medical Examiner • Mansfield, Ohio • lowreyame@gmail.com</span><a
+                href="tel:7402150312">Call 740-215-0312</a></div>
+    </div>
+    <header>
+        <nav class="container">
+            <a class="brand" href="#">
+                <div class="mark">✈</div>
+                <div><strong>Dr. Charles Lowrey, M.D.</strong><span>FAA Aviation Medical Exams</span></div>
+            </a>
+            <ul>
+                <li><a href="#exams">Exams</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#prepare">Prepare</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <a class="navcta" href="mailto:lowreyame@gmail.com">Schedule an Exam</a>
+        </nav>
+    </header>
 
-<main>
-<section class="hero"><div class="plane"></div><div class="container"><div class="hero-content">
-<div class="eyebrow"><span class="dot"></span> Mansfield Lahm Regional Airport</div>
-<h1>FAA medical exams, made straightforward.</h1>
-<p>Dr. Charles Lowrey, M.D. offers FAA Designated Medical Exams for Class II and Class III certificates at Niss Aviation FBO in Mansfield, Ohio.</p>
-<div class="buttons"><a class="btn primary" href="mailto:lowreyame@gmail.com">Email to Schedule →</a><a class="btn outline" href="tel:7402150312">Call 740-215-0312</a></div>
-<div class="hero-note">Flexible, case-by-case appointments • Evenings & weekends may be available</div>
-</div></div></section>
+    <main>
+        <section class="hero">
+            <div class="plane"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="eyebrow"><span class="dot"></span> Mansfield Lahm Regional Airport</div>
+                    <h1>FAA Aviation Medical Exams in Mansfield, Ohio.</h1>
+                    <p>Dr. Charles Lowrey, M.D. provides FAA aviation medical exams for pilots in Ohio, including Class II and Class III medical examinations at Niss Aviation FBO in Mansfield.</p>
+                    <div class="buttons"><a class="btn primary" href="mailto:lowreyame@gmail.com">Email to Schedule
+                            →</a><a class="btn outline" href="tel:7402150312">Call 740-215-0312</a></div>
+                    <div class="hero-note">FAA medical exam for pilots in Ohio • Flexible appointments available
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="stats"><div class="container statgrid">
-<div class="stat"><b>Class II</b><span>Commercial pilots flying for hire</span></div><div class="stat"><b>Class III</b><span>General aviation pilots</span></div><div class="stat"><b>$180</b><span>Class II & Class III medical exams</span></div>
-</div></div>
+        <div class="stats">
+            <div class="container statgrid">
+                <div class="stat"><b>Class II</b><span>Commercial pilots flying for hire</span></div>
+                <div class="stat"><b>Class III</b><span>General aviation pilots</span></div>
+                <div class="stat"><b>$180</b><span>Class II & Class III medical exams</span></div>
+            </div>
+        </div>
 
-<section id="exams"><div class="container"><div class="sectionhead"><div class="kicker">FAA Medical Exams</div><h2>Choose the certificate that fits your flying.</h2><p>Clear, practical information about the Class II and Class III exams offered by the practice.</p></div>
-<div class="cards">
-<article class="card"><div class="num">CLASS II</div><h3>Commercial aviation</h3><p>For commercial pilots flying for hire.</p><ul><li>Valid for 12 months at any age.</li><li>After expiration, lapses automatically to Third Class.</li></ul><div class="price">$180</div><div class="sub">Medical examination fee</div></article>
-<article class="card"><div class="num">CLASS III</div><h3>General aviation</h3><p>For general aviation pilots.</p><ul><li>Valid for 5 years if under age 40.</li><li>Valid for 2 years if age 40 or older.</li></ul><div class="price">$180</div><div class="sub">Medical examination fee</div></article>
-</div></div></section>
+        <section id="exams">
+            <div class="container">
+                <div class="exam-pricing">
+                    <div class="sectionhead" style="margin-bottom:20px;">
+                        <div class="kicker">FAA medical exams & pricing</div>
+                        <h2>FAA medical exams for pilots in Ohio.</h2>
+                        <p>Simple, transparent pricing for Class II and Class III certificates, with straightforward guidance for commercial and general aviation pilots.</p>
+                    </div>
 
-<section class="band" id="prepare"><div class="container"><div class="sectionhead"><div class="kicker">Before your appointment</div><h2>Pre-flight your medical exam.</h2><p>Complete MedXpress before your appointment and bring the information your AME will need to review.</p></div>
-<div class="steps">
-<div class="step"><i>1</i><h3>Complete MedXpress</h3><p>Fill out your FAA application before the appointment, including medical history information from throughout your life.</p></div>
-<div class="step"><i>2</i><h3>Save your number</h3><p>Write down or print your MedXpress confirmation number. You will need it at your AME appointment.</p></div>
-<div class="step"><i>3</i><h3>Bring documentation</h3><p>Bring valid photo ID, glasses or contacts if used, and any FAA-requested medical documentation.</p></div>
-<div class="step"><i>4</i><h3>Review together</h3><p>Your application is reviewed with you at the appointment before it is submitted to the FAA.</p></div>
-</div>
-<div class="buttons"><a class="btn" style="background:#0b5ea8;color:white" href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank" rel="noopener">Open FAA MedXpress ↗</a></div>
-</div></section>
+                    <div class="exam-pricing-grid">
+                        <div>
+                            <div class="cards" style="grid-template-columns:repeat(2,1fr); margin-bottom:20px;">
+                                <article class="card">
+                                    <div class="num">CLASS II</div>
+                                    <h3>Commercial aviation</h3>
+                                    <p>For commercial pilots flying for hire.</p>
+                                    <ul>
+                                        <li>Valid for 12 months at any age.</li>
+                                        <li>After expiration, lapses automatically to Third Class.</li>
+                                    </ul>
+                                    <div class="price">$180</div>
+                                    <div class="sub">Medical examination fee</div>
+                                </article>
+                                <article class="card">
+                                    <div class="num">CLASS III</div>
+                                    <h3>General aviation</h3>
+                                    <p>For general aviation pilots.</p>
+                                    <ul>
+                                        <li>Valid for 5 years if under age 40.</li>
+                                        <li>Valid for 2 years if age 40 or older.</li>
+                                    </ul>
+                                    <div class="price">$180</div>
+                                    <div class="sub">Medical examination fee</div>
+                                </article>
+                            </div>
 
-<section id="pricing"><div class="container"><div class="split">
-<div><div class="kicker">Pricing & payment</div><div class="sectionhead"><h2>Simple, transparent pricing.</h2><p>Additional fees may apply depending on your medical circumstances and testing needs.</p></div>
-<div class="notice"><div><h3>$180</h3><p>Class II & Class III Medical Exams</p></div><a class="btn" href="mailto:lowreyame@gmail.com">Ask a Question</a></div></div>
-<div class="list">
-<div class="listrow"><div class="check">+</div><div><b>Multiple CACI Conditions</b><span>$25 each</span></div></div>
-<div class="listrow"><div class="check">+</div><div><b>Special Issuances</b><span>$50–$200 per case</span></div></div>
-<div class="listrow"><div class="check">+</div><div><b>Color Vision Testing</b><span>$50 additional fee</span></div></div>
-<div class="listrow"><div class="check">✓</div><div><b>Payment methods</b><span>Credit card (3% service fee), check, or cash with exact change</span></div></div>
-</div></div></div></section>
+                            <div class="notice" style="margin-top:0;">
+                                <div>
+                                    <h3>Color vision testing</h3>
+                                    <p>All applicants after 01/01/2025 are required to have an online color vision test, per the FAA. This test is only for new applicants who have never had color screening before, all others have been grandfathered in.</p>
+                                </div>
+                                <div class="vision-fee">
+                                    <div class="amount">$50</div>
+                                </div>
+                            </div>
+                        </div>
 
-<section class="band"><div class="container"><div class="notice"><div><h3>Color vision testing</h3><p>Applicants covered by the FAA's post-01/01/2025 testing requirement may need online color vision testing. A $50 fee applies.</p></div><a class="btn" href="mailto:lowreyame@gmail.com">Ask About Testing</a></div></div></section>
+                        <div>
+                            <div class="list">
+                                <div class="listrow">
+                                    <div class="check">+</div>
+                                    <div><b>Multiple CACI Conditions</b><span>$25 each</span></div>
+                                </div>
+                                <div class="listrow">
+                                    <div class="check">+</div>
+                                    <div><b>Special Issuances</b><span>$50–$200 per case</span></div>
+                                </div>
+                                <div class="listrow">
+                                    <div class="check">✓</div>
+                                    <div><b>Payment methods</b><span>Credit card, check, or cash with exact change</span></div>
+                                </div>
+                            </div>
+                            <div style="margin-top:20px;"><a class="btn primary" href="mailto:lowreyame@gmail.com">Ask a Question</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section><div class="container"><div class="split">
-<div><div class="kicker">What happens next</div><div class="sectionhead"><h2>Know what to expect.</h2><p>After your appointment, a certificate is issued if requirements are met. Some applications may be deferred to the FAA for follow-up.</p></div></div>
-<div class="card"><h3>If more information is needed</h3><p>If the AME requests additional records before issuing your certificate, the document says you have one week to retrieve and submit the requested information. After that, the application must be submitted to the FAA for its judgment and timeline.</p></div>
-</div></div></section>
+        
 
-<section class="location" id="location"><div class="container"><div class="split">
-<div><div class="sectionhead"><div class="kicker" style="color:#70b9ef">Find the clinic</div><h2>At Mansfield Lahm Regional Airport.</h2><p>Appointments take place at the Niss Aviation FBO / hangar area.</p></div><a class="btn primary" href="tel:7402150312">Call for directions</a></div>
-<div class="mapbox" style="padding:0;overflow:hidden"><img src="images/image1.png" alt="Aerial parking and airport location map" style="width:100%;height:320px;object-fit:cover;display:block"><div style="position:absolute;left:20px;right:20px;bottom:20px;background:rgba(4,17,31,.88);padding:14px 16px;border-radius:14px"><div class="address"><b>2000 Harrington Memorial Rd</b><br>Mansfield, OH 44903<small>Park in the labeled parking area → enter Niss Aviation FBO → walk through the FBO onto the airfield → Niss Aviation Hangar.</small></div></div></div>
-</div></div></section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <div class="kicker">About</div>
+                        <div class="sectionhead">
+                            <h2>Dr. Charles Lowrey, M.D.</h2>
+                            <p>Dr. Lowrey is a board-certified anesthesiologist and partner at Anesthesia Associates of Mansfield, Inc., specializing in Adult Cardiothoracic Anesthesiology. He earned his medical degree from Wright State University in 2015, completed his anesthesiology residency and cardiothoracic fellowship at the University of Kentucky, and holds an MPH from the University of Cincinnati. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <ul class="about-list">
+                            <li><span class="bullet"></span><span>Experienced medical professional</span></li>
+                            <li><span class="bullet"></span><span>Holds a Recreational Pilot's license</span></li>
+                            <li><span class="bullet"></span><span>Served in the Air National Guard</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top:10px;">
+                <div class="serving-box">
+                    <div class="kicker">Serving pilots from all across Ohio</div>
+                    <div class="serving-list">
+                        <span class="city-tag">Mansfield</span>
+                        <span class="city-tag">Columbus</span>
+                        <span class="city-tag">Cleveland</span>
+                        <span class="city-tag">Cincinnati</span>
+                        <span class="city-tag">Toledo</span>
+                        <span class="city-tag">Dayton</span>
+                        <span class="city-tag">Akron</span>
+                        <span class="city-tag">Canton</span>
+                        <span class="city-tag">Youngstown</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section><div class="container"><div class="sectionhead"><div class="kicker">Aviation-focused care</div><h2>Your medical exam, in an aviation setting.</h2></div><div class="gallery"><figure class="photo"><img src="images/image9.jpeg" alt="Aircraft flying at sunset"><figcaption>Keep your focus on flying.</figcaption></figure><figure class="photo"><img src="images/image4.jpg" alt="Aircraft in flight"><figcaption>Professional aviation exams.</figcaption></figure><figure class="photo"><img src="images/image3.jpeg" alt="Single-engine aircraft in flight"><figcaption>Mansfield aviation.</figcaption></figure></div></div></section>
+        <section class="band" id="prepare">
+            <div class="container">
+                <div class="sectionhead">
+                    <div class="kicker">Before your appointment</div>
+                    <h2>Pre-flight your medical exam.</h2>
+                    <p>Complete MedXpress before your appointment and bring the information your AME will need to
+                        review.</p>
+                </div>
+                <div class="steps">
+                    <div class="step"><i>1</i>
+                        <h3>Complete MedXpress</h3>
+                        <p>Fill out your FAA application before the appointment, including medical history information
+                            from throughout your life.</p>
+                    </div>
+                    <div class="step"><i>2</i>
+                        <h3>Save your number</h3>
+                        <p>Write down or print your MedXpress confirmation number. You will need it at your AME
+                            appointment.</p>
+                    </div>
+                    <div class="step"><i>3</i>
+                        <h3>Bring documentation</h3>
+                        <p>Bring valid photo ID, glasses or contacts if used, and any FAA-requested medical
+                            documentation.</p>
+                    </div>
+                    <div class="step"><i>4</i>
+                        <h3>Review together</h3>
+                        <p>Your application is reviewed with you at the appointment before it is submitted to the FAA.
+                        </p>
+                    </div>
+                </div>
+                <div class="buttons"><a class="btn" style="background:#0b5ea8;color:white"
+                        href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank" rel="noopener">Open
+                        FAA MedXpress ↗</a></div>
+            </div>
+        </section>
 
-<section><div class="container"><div class="sectionhead"><div class="kicker">FAA resources</div><h2>Useful links for pilots.</h2></div>
-<div class="resources">
-<a class="resource" href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank" rel="noopener"><b>FAA MedXpress ↗</b><span>Complete your medical application before your appointment.</span></a>
-<a class="resource" href="https://www.faa.gov/pilots/medical_certification" target="_blank" rel="noopener"><b>FAA Medical Certification ↗</b><span>Official FAA guide to medical certification.</span></a>
-<a class="resource" href="https://www.faa.gov/pilots/medical_certification/media/Medical_Examination_Bill_of_Rights.pdf" target="_blank" rel="noopener"><b>Medical Examination Bill of Rights ↗</b><span>Review the FAA's examination rights information.</span></a>
-</div></div></section>
-</main>
 
-<footer><div class="container"><div class="foot"><div><strong>Dr. Charles Lowrey, M.D.</strong><br><span>FAA Designated Aviation Medical Examiner</span></div><div class="footlinks"><a href="tel:7402150312">740-215-0312</a><a href="mailto:lowreyame@gmail.com">lowreyame@gmail.com</a></div></div><div class="copyright">© 2026 Dr. Charles Lowrey, M.D. • Mansfield, Ohio</div></div></footer>
-</body></html>
+        <section class="what-next">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <div class="kicker">What happens next</div>
+                        <div class="sectionhead">
+                            <h2>Know what to expect.</h2>
+                            <p>After your appointment, a certificate is issued if requirements are met. Some
+                                applications may be deferred to the FAA for follow-up.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>If more information is needed</h3>
+                        <p>If the AME requests additional records before issuing your certificate, the document says you
+                            have one week to retrieve and submit the requested information. After that, the application
+                            must be submitted to the FAA for its judgment and timeline.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location" id="location">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <div class="sectionhead">
+                            <div class="kicker" style="color:#70b9ef">Find the clinic</div>
+                            <h2>Exam location</h2>
+                        </div>
+                        <div class="location-card">
+                            <div>
+                                <b>2000 Harrington Memorial Rd</b>
+                                <small>Mansfield, OH 44903</small>
+                            </div>
+                            <small>Park in the labeled parking area, enter Niss Aviation FBO, and continue through the FBO toward the hangar.</small>
+                            <a class="btn primary" href="https://maps.app.goo.gl/piWoKFZFjTyDxmBw6" target="_blank" rel="noopener">Open in maps</a>
+                        </div>
+                    </div>
+                    <div class="mapbox">
+                        <img src="images/image1.png" alt="Aerial parking and airport location map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="sectionhead">
+                    <div class="kicker">Aviation-focused care</div>
+                    <h2>Your medical exam, in an aviation setting.</h2>
+                </div>
+                <div class="gallery">
+                    <figure class="photo"><img src="images/image9.jpeg" alt="Aircraft flying at sunset">
+                        <figcaption>Keep your focus on flying.</figcaption>
+                    </figure>
+                    <figure class="photo"><img src="images/IMG_3916.jpeg" alt="Aircraft in flight">
+                        <figcaption>Professional aviation exams.</figcaption>
+                    </figure>
+                    <figure class="photo"><img src="images/IMG_3917.jpeg" alt="Single-engine aircraft in flight">
+                        <figcaption>Mansfield aviation.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <div class="container">
+                <div class="sectionhead">
+                    <div class="kicker">FAA resources</div>
+                    <h2>Useful links for pilots.</h2>
+                </div>
+                <div class="resources">
+                    <a class="resource" href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank"
+                        rel="noopener"><b>FAA MedXpress ↗</b><span>Complete your medical application before your
+                            appointment.</span></a>
+                    <a class="resource" href="https://www.faa.gov/pilots/medical_certification" target="_blank"
+                        rel="noopener"><b>FAA Medical Certification ↗</b><span>Official FAA guide to medical
+                            certification.</span></a>
+                    <a class="resource"
+                        href="https://www.faa.gov/pilots/medical_certification/media/Medical_Examination_Bill_of_Rights.pdf"
+                        target="_blank" rel="noopener"><b>Medical Examination Bill of Rights ↗</b><span>Review the FAA's
+                            examination rights information.</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <strong>Dr. Charles Lowrey, M.D.</strong>
+                    <p>FAA Aviation Medical Examiner in Mansfield, Ohio providing Class II and Class III pilot medical exams for pilots in Ohio, including FAA medical certification support at Niss Aviation FBO.</p>
+                    <div class="footer-tag">Pilot Medical Exams • Ohio</div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <div class="footer-links">
+                        <a href="tel:7402150312">740-215-0312</a>
+                        <a href="mailto:lowreyame@gmail.com">lowreyame@gmail.com</a>
+                    </div>
+                    <div class="footer-meta" style="margin-top:12px;">2000 Harrington Memorial Rd<br>Mansfield, OH 44903</div>
+                </div>
+                <div class="footer-column">
+                    <h4>Serving pilots From</h4>
+                    <div class="footer-meta">Mansfield, Columbus, Cleveland, Cincinnati, Toledo, Dayton, Akron, Canton, Youngstown, and all over Ohio.</div>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Dr. Charles Lowrey, M.D. • FAA Aviation Medical Examiner • Mansfield, Ohio</div>
+        </div>
+    </footer>
+</body>
+
+</html>
